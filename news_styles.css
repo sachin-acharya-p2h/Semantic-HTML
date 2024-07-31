@@ -1,0 +1,52 @@
+header, nav, ul, li {
+    display: flex;
+    align-items:end;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+header, nav, ul, li, a{
+    text-decoration: none;
+    color: black;
+}
+
+.images-with-captions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+.content{
+    flex: 1 1 calc(50% - 20px);
+    box-sizing: border-box;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content h2{
+    margin-top: 0;
+}
+
+.content p{
+    margin: 0;
+}
+
+.content a{
+    color: black;
+}
+
+.image-stack{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.images {
+    flex: 1 1  calc(33% - 10px);
+    box-sizing: border-box;
+}
