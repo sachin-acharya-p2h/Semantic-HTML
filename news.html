@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="news_styles.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <div class="wrapper">
-        <header>
+        <header role="banner">
             <div class="container">
-                <nav>
+                <nav role="navigation">
                     <div class="logo">
                         <h1><a href="#">LOGO</a></h1>
                     </div>
@@ -26,93 +27,94 @@
             </div>
         </header>
         <hr>
-        <main>
-            <ul>
-                <li><a href="#about-us">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#news-details">News Details</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <main id="main-content" role="main">
+            <nav aria-label="Secondary navigation">
+                <ul>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#news-details">News Details</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
             <h1>News</h1> 
-            <div class="images-with-captions">
-                <!-- article banaunu paryo -->
-                <div class="content">
-                    <img src="placeholder.png" alt="placeholder">
+            <section class="images-with-captions">
+                <article class="content">
+                    <img src="placeholder.png" alt="placeholder image">
                     <h2>Lorem ipsum dolor sit amet.</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis aspernatur quidem repellat mollitia impedit, 
                         modi fugiat alias officia facilis sit veniam. Ducimus facilis dolor modi. Pariatur nisi nobis dolor temporibus.</p>
                     <a href="#">Learn More</a>
-                </div>
-                <div class="content">
-                    <img src="placeholder.png" alt="placeholder">
+                </article>
+                <article class="content">
+                    <img src="placeholder.png" alt="placeholder image">
                     <h2>Lorem ipsum dolor sit amet.</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis aspernatur quidem repellat mollitia impedit, 
                         modi fugiat alias officia facilis sit veniam. Ducimus facilis dolor modi. Pariatur nisi nobis dolor temporibus.</p>
                     <a href="#">Learn More</a>
-                </div>
-                <div class="content">
-                    <img src="placeholder.png" alt="placeholder">
+                </article>
+                <article class="content">
+                    <img src="placeholder.png" alt="placeholder image">
                     <h2>Lorem ipsum dolor sit amet.</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis aspernatur quidem repellat mollitia impedit, 
                         modi fugiat alias officia facilis sit veniam. Ducimus facilis dolor modi. Pariatur nisi nobis dolor temporibus.</p>
                     <a href="#">Learn More</a>
-                </div>
-                <div class="content">
-                    <img src="placeholder.png" alt="placeholder">
+                </article>
+                <article class="content">
+                    <img src="placeholder.png" alt="placeholder image">
                     <h2>Lorem ipsum dolor sit amet.</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis aspernatur quidem repellat mollitia impedit, 
                         modi fugiat alias officia facilis sit veniam. Ducimus facilis dolor modi. Pariatur nisi nobis dolor temporibus.</p>
                     <a href="#">Learn More</a>
-                </div>
-            </div>
-            <div class="image-stack">
+                </article>
+            </section>
+            <section class="image-stack">
                 <div class="images">
-                    <img src="placeholder.png" alt="placeholder">
-                </div>
-                <div class="images">
-                    <img src="placeholder.png" alt="placeholder">
+                    <img src="placeholder.png" alt="placeholder image">
                 </div>
                 <div class="images">
-                    <img src="placeholder.png" alt="placeholder">
+                    <img src="placeholder.png" alt="placeholder image">
                 </div>
                 <div class="images">
-                    <img src="placeholder.png" alt="placeholder">
+                    <img src="placeholder.png" alt="placeholder image">
                 </div>
                 <div class="images">
-                    <img src="placeholder.png" alt="placeholder">
+                    <img src="placeholder.png" alt="placeholder image">
                 </div>
                 <div class="images">
-                    <img src="placeholder.png" alt="placeholder">
+                    <img src="placeholder.png" alt="placeholder image">
                 </div>
-            </div>
-            <div class="form">
+                <div class="images">
+                    <img src="placeholder.png" alt="placeholder image">
+                </div>
+            </section>
+            <section class="form">
                 <form>
                     <h1>Newsletter</h1>
-                    <label for="email"></label>
-                    <input id="email" type="email" placeholder="Email"><br>
-                    <label for="message"></label>
-                    <textarea id="message" placeholder="Message"></textarea><br>
-                    <input type="submit" value="submit">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="Email" required><br>
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Message" required></textarea><br>
+                    <input type="submit" value="Submit">
                 </form>
-            </div>
-            <div class="image-after-newsletter">
-                <img src="placeholder.png" alt="placeholder">
-            </div>
-            <div class="text-after-newsletter">
+            </section>
+            <section class="image-after-newsletter">
+                <img src="placeholder.png" alt="placeholder image">
+            </section>
+            <section class="text-after-newsletter">
                 <div class="container">
-                    <h1>lorem ipsium</h1>
+                    <h2>Lorem ipsum</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum quo ab debitis sed, possimus veritatis<br> excepturi ipsa dolorum 
                         voluptatibus beatae, facere animi mollitia praesentium <br>perspiciatis dicta exercitationem. Temporibus, voluptate reiciendis?</p>
                 </div>
                 <div class="container">
-                    <h2>lorem ipsium</h2>
+                    <h3>Lorem ipsum</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum quo ab debitis sed, possimus veritatis<br> excepturi ipsa dolorum 
                         voluptatibus beatae, facere animi mollitia praesentium <br>perspiciatis dicta exercitationem. Temporibus, voluptate reiciendis?</p>
                 </div>
                 <div class="container">
-                    <h3>lorem ipsium</h3>
+                    <h4>Lorem ipsum</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum quo ab debitis sed, possimus veritatis excepturi ipsa dolorum 
                         voluptatibus beatae, facere animi mollitia praesentium perspiciatis dicta exercitationem. Temporibus, voluptate reiciendis?</p>
                 </div>
@@ -124,16 +126,15 @@
                         </blockquote>
                     </div>
                 </div>
-            </div>
+            </section>
         </main>
-        <footer>
+        <footer role="contentinfo">
             <div class="footer-container">
                 <div class="footer-logo">
                     <h1>LOGO</h1>
                 </div>
                 <div class="footer-contact">
                     <h2>Contact:</h2>
-                    <!-- footer ma no paragraph tag -->
                     <ul>
                         <li>000 000 000 00</li>
                     </ul>
@@ -153,5 +154,6 @@
             </div>
         </footer>
     </div>
+    <a href="#top" class="back-to-top">Back to top</a>
 </body>
 </html>
