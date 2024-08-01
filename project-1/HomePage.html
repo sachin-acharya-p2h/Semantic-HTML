@@ -8,28 +8,32 @@
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
-    <header role="banner">
+    <header role="banner" id="page-top">
         <div class="container">
             <div class="logo">
-                <a href="#">LOGO</a>
+                <a href="#">
+                    <img src="images.png" alt="palceholder image for logo">
+                </a>
             </div>
-            <nav role="navigation">
+            <nav role="navigation" aria-label="Main Navigation">
                 <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">News Details</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" role="menuitem" tabindex="0">About Us</a></li>
+                    <li><a href="#" role="menuitem" tabindex="0">Services</a></li>
+                    <li><a href="#" role="menuitem" tabindex="0">News</a></li>
+                    <li><a href="#" role="menuitem" tabindex="0">News Details</a></li>
+                    <li><a href="#" role="menuitem" tabindex="0">Gallery</a></li>
+                    <li><a href="#" role="menuitem" tabindex="0">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main id="main-content" role="main">
         <section class="hero">
-            <h1>Lorem ipsium dolor sit amet</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A atque maiores impedit debitis itaque repellendus quia necessitatibus sunt! Commodi odit ad ipsam veniam possimus doloribus excepturi culpa aperiam nam numquam!</p>
-            <a href="#">Learn More</a>
+            <div class="container">
+                <h1>Lorem ipsium dolor sit amet</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A atque maiores impedit debitis itaque repellendus quia necessitatibus sunt! Commodi odit ad ipsam veniam possimus doloribus excepturi culpa aperiam nam numquam!</p>
+                <a href="#">Learn More</a>
+            </div>
         </section>
         <section class="content-with-aside">
             <article>
@@ -44,7 +48,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere impedit voluptatum omnis quia corrupti ab non distinctio ratione nam dolores enim ipsa officia ipsum ullam dicta nulla sint, est nesciunt!</p>
                 <a href="#">Learn More</a>
             </article>
-            <aside>
+            <aside class="sidebar">
                 <h3>Lorem ipsum amet.</h3>
                 <ul>
                     <li><a href="#">Side Link</a></li>
@@ -58,7 +62,8 @@
             </aside>
         </section>
         <section class="image-with-text">
-            <figure>
+            <div class="container">
+            <figure class="article-img">
                 <img src="./placeholder.png" alt="Placeholder Image for small image in this webpage.">
                 <figcaption>
                     <h2>Lorem ipsum dolor sit amit.</h2>
@@ -66,9 +71,10 @@
                     <a href="#">Button</a>
                 </figcaption>
             </figure>
+            </div>
         </section>
         <section class="image-only-section">
-            <figure>
+            <figure class="img">
                 <img src="./placeholder.png" alt="Placeholder Image for the largest image in webpage.">
             </figure>
         </section>
@@ -80,7 +86,8 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <div class="form_input">
                             <label for="name">Full Name:</label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" name="name" required aria-describedby="nameHelp">
+                            <span id="nameHelp">Please enter your full legal name.</span>
                         </div>
                         <div class="form_input">
                             <label for="email">Email:</label>
@@ -94,7 +101,7 @@
                             <label for="message">Message:</label>
                             <textarea id="message" name="message"></textarea>
                         </div>
-                        <input type="submit" value="Submit">
+                        <input type="submit" value="Submit" id="form-submit">
                     </form>
                 </div>
                 <div class="contact-image">
@@ -126,7 +133,7 @@
                 <li>&copy; 2024 - <a href="#">XYZ Co., Inc.</a> All Rights Reserved.</li>
                 <li><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></li>
             </ul>
-            <a href="#" class="back-to-top">Back to top</a>
+            <a href="#main-content" class="back-to-top">Back to top</a>
         </div>
     </footer>
 </body>
