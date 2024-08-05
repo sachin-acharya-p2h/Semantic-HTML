@@ -6,6 +6,20 @@
     margin: 20px;
 }
 
+.accessibility {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+.accessibility:focus {
+    position:static;
+    width:auto;
+    height:auto;
+}
+
 /* #page-top {
     background-color: #fff;
     border-bottom: 1px solid #ddd;
