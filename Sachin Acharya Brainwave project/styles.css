@@ -1,11 +1,18 @@
 .wrapper {
     background-color: white;
-    /* margin-right: 100px;
-    margin-left: 100px; */
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    font-family: "Rubik", sans-serif;
+}
+
+
+.rubik {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
 }
 
 .accessibility {
@@ -26,10 +33,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    /* padding: 15px; */
     width: 75%;
-    margin-left: auto;
+    margin-left: 245px;
     margin-right: auto;
+    margin-top: 24px;
+
 }
 
 .logo img {
@@ -37,6 +46,16 @@
     color: black;
     font-weight: bold;
 }
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* .navbar{
+    margin-right: 110px;
+    margin-top: 5px;
+} */
 
 nav ul {
     list-style: none;
@@ -47,8 +66,16 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin-top: 7px;
+    margin-right: 30px;
+    padding: 1px;
+    letter-spacing: -0.1px;
+    /* margin-left: 2px; */
 }
+
+/* .navbar .sign{
+    margin-left: px;
+} */
 
 nav ul li a {
     text-decoration: none;
@@ -59,8 +86,8 @@ nav ul li a {
 nav ul li a.signup {
     color: #fff;
     background-color: #5c5cfa;
-    padding: 8px 15px;
-    border-radius: 4px;
+    padding: 40px;
+    border-radius: 20px;
 }
 
 nav ul li a.signup:hover {
@@ -76,7 +103,7 @@ nav ul li a.signup:hover {
 .Sign-Up {
     background-color: #4a4aff;
     color: white;
-    padding: 10px 20px;
+    padding: 15px 30px;
     font-size: 16px;
     font-weight: bold;
     border: none;
@@ -94,34 +121,59 @@ nav ul li a.signup:hover {
     padding: 20px;
     flex-direction: column;
     align-items: center;
+    margin-top: 90px;
+    margin-left: 190px;
 }
 
 .hero-text .container h1 {
     font-size: 60px;
     font-weight: bold;
+    /* padding-top: 20px; */
+}
+
+.hero-text .container pre{
+    margin-top: 35px;
+    font-size: 19px;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+    margin-left: 215px;
 }
 
 .hero-image .container img {
-    display: block;
+    /* display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    width: 75%; */
+    margin-left: 245px;
+    margin-top: 70px;
+    width: 1110px;
+    height: 523px;
+
 }
 
 .hero-after-text {
-    padding: 30px;
     width: 75%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 120px;
+    /* margin-left: 235px; */
+    padding-left: 35px;
 }
 
-.hero-after-text h2{
+/* .hero-after-text h2 {
     font-size: 48px;
-}
+    font-weight: 800;
+    line-height: 58px;
+    letter-spacing: -1.8px;
+} */
 
-.hero-after-text p{
+/* .hero-after-text p {
     font-size: 19px;
-}
+    line-height: 32px;
+    letter-spacing: -0.2px;
+    padding-top: 10px;
+} */
+
 .layout-container {
     display: flex;
     flex-wrap: wrap;
@@ -136,17 +188,26 @@ nav ul li a.signup:hover {
 }
 
 .layout-column h2 {
-    margin-top: 0;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 58px;
+    letter-spacing: -1.8px;
 }
 
 .layout-column p {
-    white-space: pre-wrap;
-    word-wrap: break-word;
+    /* white-space: pre-wrap;
+    word-wrap: break-word; */
+    font-size: 19px;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+    padding-top: 10px;
 }
 
 .image-collage {
     width: 100%;
     background-color: #F4F7FA;
+    margin-top: 250px;
+    /* margin-right: 200px; */
 }
 
 .image-collage .container {
@@ -158,30 +219,19 @@ nav ul li a.signup:hover {
     margin-right: auto;
 }
 
-
-.image-grid{
+.image-grid {
     display: flex;
     flex-wrap: wrap;
-
+    /* margin-right: 200px; */
 }
 
-.image-grid img{
+.image-grid img {
     height: 275px;
     width: 224px;
     padding: 20px;
 }
-
-/* td {
-    padding: 20px;
-}
-
-td img {
-    height: 275px;
-    width: 224px;
-} */
 
 .image-collage-text {
-    /* flex: 1; */
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -200,7 +250,7 @@ td img {
 .team-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
     padding: 30px;
 }
@@ -215,29 +265,7 @@ td img {
     text-align: center;
 }
 
-/* .team-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.team-section {
-    padding-bottom: 90px;
-}
-
-.team-section .container{
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.team-grid{
-    width: 100%;
-
-} */
-
-.team-grid{
+.team-grid {
     display: flex;
     flex-wrap: wrap;
     width: 80%;
@@ -308,7 +336,6 @@ td img {
     margin-left: 5px;
 }
 
-/* Base styles */
 a {
     text-decoration: none;
 }
@@ -324,28 +351,20 @@ h4 {
     color: #777;
 }
 
-/* Footer styles */
-
-footer{
-    background-color: #161C2D; 
+footer {
+    background-color: #161C2D;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-between;
     padding: 40px;
-    /* background-color: #161C2D; */
     border-top: 1px solid #161C2D;
     width: 75%;
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
 }
 
-/* .footer-text-container{
-    width: 75%;
-    margin-right: 20px;
-    margin-left: 20px;
-} */
 .footer-container ul li {
     margin-bottom: 10px;
 }
@@ -424,9 +443,3 @@ a {
 svg {
     vertical-align: middle;
 }
-
-
-/* .wrapper #main-content .image-collage{
-    background-color: grey;
-    width: 100%;
-} */
