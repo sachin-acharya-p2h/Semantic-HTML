@@ -6,46 +6,35 @@
     <title>Brainwave.io</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-    </style>
 </head>
 <body>
     <a href="#main-content" class="accessibility">Skip to main content</a>
     <div id="wrapper" class="wrapper">
-        <header id="page-top">
+        <header class="header">
             <div class="container">
-                <div class="logo" role="banner">
-                    <!-- <a href="#">
-                        <span>Brainwave.io</span>
-                    </a> -->
-                    <span>Brainwave.io</span>
+                <div class="logo">
+                    <a href="#">
+                        <img src="images/logo.svg" alt="Brainwave.io">
+                    </a>
                 </div>
-                <div class="navbar">
                 <nav role="navigation" aria-label="Main Navigation">
                     <ul role="menubar" class="navlist">
                         <li><a href="#" role="menuitem" tabindex="0">Demos</a></li>
                         <li><a href="#" role="menuitem" tabindex="0">Pages</a></li>
                         <li><a href="#" role="menuitem" tabindex="0">Support</a></li>
                         <li><a href="#" role="menuitem" tabindex="0">Contact</a></li>
-                        <li aria-hidden="true"><a href="#" role="presentation" tabindex="-1">|</a></li>
+                        <div class="separator"></div>
                         <li><a href="#" role="menuitem" tabindex="0">Sign In</a></li>
-                        <li><a href="#" role="menuitem" tabindex="0" class="Sign-Up">Sign Up</a></li>
+                        <li><a href="#" role="menuitem" tabindex="0" class="sign-up">Sign Up</a></li>
                     </ul>
                 </nav>
-                </div>
             </div>
         </header>  
-        <main id="main-content">
+        <main id="main">
             <section class="hero-text">
                 <div class="container">
-                    <div class="heading">
                     <h1>Our story</h1>
-                    </div>
-                    <div class="para">
-                    <p>With lots of unique blocks, you can easily build a page without coding.</p>
-                    <p>Build your next consultancy website within a few minutes.</p>
-                    </div>
+                    <p>With lots of unique blocks, you can easily build a page without coding. Build your next consultancy website within a few minutes.</p>
                 </div>
             </section>
             <section class="hero-image">
@@ -68,27 +57,27 @@
             </section>
             <section class="image-collage">
                 <div class="container">
-                    <div class="image-grid">
-                        <div class="image-row">
-                            <img src="./images/Image1@2x.png" alt="guy in yellow shirt">
-                            <img src="./images/Image2@2x.png" alt="two people talking to each other">
-                        </div>
-                        <div class="image-row">
-                            <img src="./images/Image3@2x.png" alt="two women looking at the laptop">
-                            <img src="./images/Image5@2x.png" alt="a woman using her phone">
-                        </div>
+                  <div class="image-grid">
+                    <div class="image-row">
+                      <img src="./images/Image1@2x.png" alt="guy in yellow shirt">
+                      <img src="./images/Image2@2x.png" alt="two people talking to each other">
                     </div>
-                    <div class="image-collage-text">
-                        <div class-="img-head">
-                        <h2>High skilled coders from worldwide.</h2>
-                        </div>
-                        <div class="img-para">
-                        <p>We share common trends and strategies for improving your rental income and making sure you stay in high demand of service.</p>
-                        <p>With lots of unique blocks, you can easily build a page without coding. Build your next landing page. With lots of unique blocks, you can easily build a page without coding any other page.</p>
-                        </div>
+                    <div class="image-row">
+                      <img src="./images/Image3@2x.png" alt="two women looking at the laptop">
+                      <img src="./images/Image5@2x.png" alt="a woman using her phone">
                     </div>
+                  </div>
+                  <div class="image-collage-text">
+                    <div class="img-head">
+                      <h2>High skilled coders from worldwide.</h2>
+                    </div>
+                    <div class="img-para">
+                      <p>We share common trends and strategies for improving your rental income and making sure you stay in high demand of service.</p>
+                      <p>With lots of unique blocks, you can easily build a page without coding. Build your next landing page. With lots of unique blocks, you can easily build a page without coding any other page.</p>
+                    </div>
+                  </div>
                 </div>
-            </section>
+              </section>              
             <section class="team-section">
                 <div class="container">
                     <div class="team-header">
@@ -160,10 +149,10 @@
                 </div>
             </section> 
         </main>
-        <footer>
+        <footer class="footer">
             <div class="footer-container">
-                <div class="footer-section-company">
-                    <h4>Company</h4>
+                <div class="footer-section col">
+                    <div class="footer-section-title">Company</div>
                     <ul>
                         <li><a href="#">About us</a></li>
                         <li><a href="#">Contact us</a></li>
@@ -171,8 +160,8 @@
                         <li><a href="#">Press</a></li>
                     </ul>
                 </div>
-                <div class="footer-section-product">
-                    <h4>Product</h4>
+                <div class="footer-section col">
+                    <div class="footer-section-title">Product</div>
                     <ul>
                         <li><a href="#">Features</a></li>
                         <li><a href="#">Pricing</a></li>
@@ -181,8 +170,8 @@
                         <li><a href="#">Support</a></li>
                     </ul>
                 </div>
-                <div class="footer-section-services">
-                    <h4>Services</h4>
+                <div class="footer-section col">
+                    <div class="footer-section-title">Services</div>
                     <ul>
                         <li><a href="#">Digital Marketing</a></li>
                         <li><a href="#">Content Writing</a></li>
@@ -190,16 +179,16 @@
                         <li><a href="#">UI Design</a></li>
                     </ul>
                 </div>
-                <div class="footer-section-legal">
-                    <h4>Legal</h4>
+                <div class="footer-section col">
+                    <div class="footer-section-title">Legal</div>
                     <ul>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Terms & Conditions</a></li>
                         <li><a href="#">Return Policy</a></li>
                     </ul>
                 </div>
-                <div class="footer-section-contact">
-                    <h4>Contact us</h4>
+                <div class="footer-section col">
+                    <div class="footer-section-title">Contact us</div>
                     <ul>
                         <li><a href="mailto:support@brainwave.io">support@brainwave.io</a></li>
                         <li><a href="tel:+13339434391435">+133-394-3439-1435</a></li>
@@ -208,19 +197,21 @@
             </div>
             <div class="footer-bottom">
                 <p>© 2024 Copyright, All Rights Reserved, Made by <a href="#">Seju_ui_ux</a> with 
-                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.8427 1.20657C11.2998 -0.401767 8.78893 -0.401767 7.24579 1.20657C7.16024 1.29575 7.07835 1.38968 7.00011 1.48806C6.92188 1.38937 6.83999 1.29575 6.75414 1.20625C5.2113 -0.402085 2.70038 -0.402085 1.15724 1.20625C-0.3859 2.81459 -0.385595 5.43211 1.15724 7.04077L6.78458 12.907C6.84394 12.9689 6.92188 13 6.99981 13C7.07774 13 7.15568 12.9689 7.21504 12.907L12.8424 7.04077C14.3858 5.43243 14.3858 2.81491 12.8427 1.20657Z" fill="#1082E9"/>
-                    </svg>
+                    <a href="#wrapper">
+                        <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.8427 1.20657C11.2998 -0.401767 8.78893 -0.401767 7.24579 1.20657C7.16024 1.29575 7.07835 1.38968 7.00011 1.48806C6.92188 1.38937 6.83999 1.29575 6.75414 1.20625C5.2113 -0.402085 2.70038 -0.402085 1.15724 1.20625C-0.3859 2.81459 -0.385595 5.43211 1.15724 7.04077L6.78458 12.907C6.84394 12.9689 6.92188 13 6.99981 13C7.07774 13 7.15568 12.9689 7.21504 12.907L12.8424 7.04077C14.3858 5.43243 14.3858 2.81491 12.8427 1.20657Z" fill="#1082E9"/>
+                        </svg>
+                    </a>
                 </p>
-                <div class="social-media">
-                    <a href="https://x.com/" class="fa fa-twitter" aria-label="Twitter"></a>
-                    <a href="https://facebook.com/" class="fa fa-facebook" aria-label="Facebook"></a>
-                    <a href="https://instagram.com/" class="fa fa-instagram" aria-label="Instagram"></a>
-                    <a href="https://linkedin.com/" class="fa fa-linkedin" aria-label="LinkedIn"></a>
-                </div>
+                <ul class="social-networks">
+                    <li><a href="https://x.com/" class="fa fa-twitter" aria-label="Twitter"></a></li>
+                    <li><a href="https://facebook.com/" class="fa fa-facebook" aria-label="Facebook"></a></li>
+                    <li><a href="https://instagram.com/" class="fa fa-instagram" aria-label="Instagram"></a></li>
+                    <li><a href="https://linkedin.com/" class="fa fa-linkedin" aria-label="LinkedIn"></a></li>
+                </ul>
             </div>
-        </footer>
+        </footer>        
     </div>
-    <a href="#" class="accessibility">Back to top</a>
+    <a href="#main-content" class="accessibility">Back to top</a>
 </body>
 </html>

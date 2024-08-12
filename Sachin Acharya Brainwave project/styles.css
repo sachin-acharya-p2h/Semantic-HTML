@@ -1,15 +1,24 @@
-/* *{
-    max-max-width: 100%;
-    margin: 0;
-} */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
-.wrapper {
-    background-color: white;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-    font-family: "Rubik", sans-serif;
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0 0 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .accessibility {
@@ -26,16 +35,21 @@
     height: auto;
 }
 
-#page-top .container {
+.header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 15px; */
     max-width: 75%;
     margin-left: 245px;
     margin-right: auto;
     margin-top: 24px;
 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
 }
 
 .logo img {
@@ -49,18 +63,10 @@
     font-weight: bold;
 }
 
-/* .navbar{
-    margin-right: 110px;
-    margin-top: 5px;
-} */
-
-
-
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    /* display: flex; */
     flex-wrap: nowrap;
     align-items: center;
 }
@@ -70,18 +76,12 @@ nav ul li {
     margin-right: 38px;
     padding: 1px;
     letter-spacing: -0.1px;
-    /* margin-left: 2px; */
 }
-
-/* .navbar .sign{
-    margin-left: px;
-} */
 
 nav ul li a {
     text-decoration: none;
     color: #000;
     font-weight: 500;
-    /* margin-right: 45px; */
 }
 
 nav ul li a.signup {
@@ -96,12 +96,17 @@ nav ul li a.signup:hover {
 }
 
 .separator {
-    pointer-events: none;
-    color: #000;
-    font-weight: 500;
-}
+    display: inline-block;
+    width: 1px;
+    height: 20px;
+    background-color: black;
+    vertical-align: middle;
+    margin-right: 20px;
+    margin-left: 2px;
+  }
+  
 
-.Sign-Up {
+.sign-up {
     background-color: #4a4aff;
     color: white;
     padding: 15px 30px;
@@ -144,7 +149,6 @@ nav ul li a.signup:hover {
 .hero-text .container .heading {
     font-size: 60px;
     font-weight: bold;
-    /* padding-top: 20px; */
     min-width: 241px;
     min-height: 65px;
     line-height: 65px;
@@ -165,7 +169,6 @@ nav ul li a.signup:hover {
 .hero-image .container{
     display: flex;
     justify-content: center;
-    /* max-height: 523px; */
     margin-bottom: 141px;
 }
 
@@ -175,9 +178,7 @@ nav ul li a.signup:hover {
 
 .layout-container {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1041px; 
+    flex-wrap: wrap;
 }
 
 .layout-column {
@@ -195,8 +196,6 @@ nav ul li a.signup:hover {
 }
 
 .layout-column p {
-    /* white-space: pre-wrap;
-    word-wrap: break-word; */
     font-size: 19px;
     line-height: 32px;
     letter-spacing: -0.2px;
@@ -210,22 +209,24 @@ nav ul li a.signup:hover {
 
 .image-collage .container {
     display: flex;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 180px;
-    padding-left: 200px;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
 .image-grid {
     display: flex;
     flex-direction: column;
+    padding: 10px;
 }
 
 .image-grid img {
     max-height: 275px;
     max-width: 224px;
     padding: 13px;
+    object-fit: cover;
 }
 
 .image-collage-text {
@@ -235,7 +236,7 @@ nav ul li a.signup:hover {
     margin-left: 50px;
 }
 
- .img-head {
+.img-head h2 {
     font-size: 48px;
     max-width: 385px;
     max-height: 116px;
@@ -243,7 +244,7 @@ nav ul li a.signup:hover {
     line-height: 58px;
 }
 
-.img-para {
+.img-para p {
     font-size: 19px;
     max-width: 495px;
     max-height: 258px;
@@ -251,6 +252,7 @@ nav ul li a.signup:hover {
     letter-spacing: -0.2px;
     line-height: 32px;
 }
+
 
 .team-section{
     margin-top: 107px;
@@ -299,8 +301,6 @@ nav ul li a.signup:hover {
     max-width: 267px;
     max-height: 452px;
     padding: 15px;
-    /* margin-left: auto;
-    margin-right: auto; */
 }
 
 .team-member img {
@@ -369,7 +369,7 @@ h4 {
     color: #777;
 }
 
-footer {
+.footer {
     background-color: #161C2D;
 }
 
@@ -383,39 +383,57 @@ footer {
     margin-right: auto;
 }
 
-.footer-container ul li {
-    margin-bottom: 10px;
-}
-
-.footer-section-company,
-.footer-section-product,
-.footer-section-services,
-.footer-section-legal,
-.footer-section-contact {
+.footer-section {
     max-width: 18%;
 }
 
-.footer-section-company,
-.footer-section-product,
-.footer-section-services,
-.footer-section-legal,
-.footer-section-contact,
-ul,
-li,
-a {
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
     color: #fff;
+    text-decoration: none;
 }
 
-.footer-section-contact ul {
-    padding-left: 10px;
-}
-
-.footer-section-contact a {
-    color: #FFFFFF;
-}
-
-.footer-section-contact a:hover {
+.footer-section a:hover {
     text-decoration: underline;
+}
+
+.footer-section-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    opacity: 0.66;
+}
+
+.social-networks {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-networks li {
+    margin: 0;
+}
+
+.social-networks a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.social-networks a:hover {
+    color: #1082E9;
 }
 
 .footer-bottom {
@@ -442,20 +460,6 @@ a {
 
 .footer-bottom a:hover {
     text-decoration: underline;
-}
-
-.social-media {
-    display: flex;
-    gap: 10px;
-}
-
-.social-media a {
-    color: white;
-    font-size: 18px;
-}
-
-.social-media a:hover {
-    color: white;
 }
 
 svg {
