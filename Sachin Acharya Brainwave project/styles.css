@@ -1,46 +1,231 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
-*{
+:root {
+    --color-primary: #473bf0;
+    --color-primary-hover: #332ba8;
+    --color-blue: #1082e9;
+    --color-black: #000;
+    --color-text: #161c2d;
+    --color-white: #fff;
+    --color-white-65: rgba(255, 255, 255, 0.65);
+    --color-bg: #d5d7dd;
+    --color-bg2: #f4f7fa;
+    --color-border: #292f41;
+    --color-gray: #5c616c;
+    --color-gray2: #595f6a;
+    --font-primary: "gilroy", sans-serif;
+    --color-link: #161c2d;
+    --color-link-hover: #161c2d;
+    --transition-duration: 0.3s;
+    --transition-timing-function: ease-in-out;
+  }
+  
+  /**
+   * Set up a decent box model on the root element
+   */
+  
+  html {
     box-sizing: border-box;
-}
-
-body {
-    font-family: 'Rubik', sans-serif;
-    background-color: #fff;
+  }
+  
+  /**
+   * Make all elements from the DOM inherit from the parent box-sizing
+   * Since `*` has a specificity of 0, it does not override the `html` value
+   * making all elements inheriting from the root box-sizing value
+   * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+   */
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: var(--font-primary);
+    color: var(--color-gray);
     margin: 0;
     padding: 0;
-}
-
-h1 {
-    margin: 0 0 10px;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.accessibility {
+  }
+  
+  
+  h1,
+  .h1,
+  h2,
+  .h2,
+  h3,
+  .h3,
+  h4,
+  .h4,
+  h5,
+  .h5,
+  h6,
+  .h6 {
+    line-height: 1.3;
+    font-weight: 700;
+    font-family: var(--font-primary);
+    margin: 0 0 16px 0;
+    color: var(--color-text);
+  }
+  
+  h1,
+  .h1 {
+    font-size: 36px;
+    letter-spacing: -2px;
+    margin-bottom: 15px;
+  }
+  
+  h2,
+  .h2 {
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: -1.8px;
+  }
+  
+  h3,
+  .h3 {
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    line-height: 1.52;
+  }
+  
+  h4,
+  .h4 {
+    font-size: 18px;
+  }
+  
+  h5,
+  .h5 {
+    font-size: 20px;
+  }
+  
+  h6,
+  .h6 {
+    font-size: 16px;
+  }
+  
+  a {
+    color: var(--color-link);
+    text-decoration: none;
+    transition-property: color, opacity, background, border, visibility, box-shadow, width, left, right;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+  }
+  
+  a:hover {
+    color: var(--color-link-hover);
+  }
+  
+  input[type='submit'],
+  button {
+    cursor: pointer;
+    transition-property: color, opacity, background, border, visibility, box-shadow, width, left, right;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+  }
+  
+  ul,
+  ol,
+  dl,
+  p {
+    margin: 0 0 20px;
+  }
+  
+  p {
+    margin-bottom: 24px;
+  }
+  
+  input[type='text'],
+  input[type='email'],
+  input[type='tel'],
+  input[type='password'],
+  input[type='url'],
+  input[type='search'],
+  textarea {
+    margin: 0;
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 0;
+    outline: 0;
+    display: block;
+    width: 100%;
+    height: 42px;
+    color: var(--color-text);
+    font-size: 16px;
+    line-height: 24px;
+    font-family: inherit;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+  }
+  
+  select {
+      border-radius: 0;
+      -webkit-appearance: none;
+  }
+  
+  blockquote {
+      border-left: 5px solid var(--color-black);
+      margin: 0;
+      padding: 0 0 0 35px;
+  }
+  
+  th,
+  td {
+      border: 1px solid var(--color-black);
+      padding: 5px;
+      text-align: left;
+      vertical-align: top;
+  }
+  
+  th {
+      text-align: center;
+      vertical-align: middle;
+  }
+  
+  .accessibility {
     position: absolute;
+    left: -9999px;
     top: auto;
-    max-width: 1px;
+    width: 1px;
     height: 1px;
     overflow: hidden;
-}
-
-.accessibility:focus {
+  }
+  
+  .accessibility:focus {
     position: static;
-    max-width: auto;
+    width: auto;
     height: auto;
-}
+  }
+  
+  .wrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .container {
+    max-width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
 .header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 75%;
-    margin-left: 245px;
+    /* max-width: 75%; */
+    margin-left: 210px;
     margin-right: auto;
     margin-top: 24px;
 
@@ -73,7 +258,7 @@ nav ul {
 
 nav ul li {
     margin-top: 7px;
-    margin-right: 38px;
+    margin-right: 33px;
     padding: 1px;
     letter-spacing: -0.1px;
 }
@@ -143,59 +328,70 @@ nav ul li a.signup:hover {
     align-items: center;
     margin-top: 90px;
     margin-left: 190px;
-    margin-bottom: 58px;
+    margin-bottom: 67px;
 }
 
-.hero-text .container .heading {
+.hero-text .container h1 {
+    margin-left: 120px;
     font-size: 60px;
     font-weight: bold;
     min-width: 241px;
     min-height: 65px;
     line-height: 65px;
     letter-spacing: -2px;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
 }
 
-.hero-text .container .para{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
+.hero-text .container p{
     font-size: 19px;
     line-height: 32px;
     letter-spacing: -0.2px;
+    text-align: center;
+    width: 55%;
+    margin-left: 210px;
 }
 
 .hero-image .container{
     display: flex;
     justify-content: center;
-    margin-bottom: 141px;
+    margin-bottom: 146px;
 }
 
 .hero-after-text {
- margin-bottom: 87px;  
+ margin-bottom: 85px;  
 }
 
 .layout-container {
     display: flex;
     flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.layout-column {
+.layout-column-1 {
     flex: 1;
     padding: 0 61px 0 0;
+    margin-left: 25px;
+    background-color: #fff;
+}
+
+.layout-column-2 {
+    flex: 1;
+    padding: 0 61px 0 0;
+    margin-left: 10px;
     background-color: #fff;
 }
 
 
-.layout-column h2 {
+.layout-column-1 h2 {
     font-size: 48px;
     font-weight: 800;
     line-height: 58px;
     letter-spacing: -1.8px;
+    
 }
 
-.layout-column p {
+.layout-column-2 p {
     font-size: 19px;
     line-height: 32px;
     letter-spacing: -0.2px;
@@ -211,9 +407,12 @@ nav ul li a.signup:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
     box-sizing: border-box;
     flex-wrap: wrap;
+    margin-top: 245px;
+    margin-left: 208px;
+    max-width: 1600px;
+    max-height: 893px;
 }
 
 .image-grid {
@@ -223,31 +422,26 @@ nav ul li a.signup:hover {
 }
 
 .image-grid img {
-    max-height: 275px;
-    max-width: 224px;
+    max-height: 300px;
+    min-width: 250px;
     padding: 13px;
-    object-fit: cover;
 }
 
 .image-collage-text {
-    display: flex;
+    flex: 1;
+    margin-left: 80px;
     flex-direction: column;
-    padding-top: 200px;
-    margin-left: 50px;
+    padding-top: 100px;
 }
 
-.img-head h2 {
+.img-head h2{
     font-size: 48px;
-    max-width: 385px;
-    max-height: 116px;
     letter-spacing: -1.8px;
     line-height: 58px;
 }
 
-.img-para p {
+.img-para {
     font-size: 19px;
-    max-width: 495px;
-    max-height: 258px;
     padding-top: 50px;
     letter-spacing: -0.2px;
     line-height: 32px;
@@ -255,7 +449,6 @@ nav ul li a.signup:hover {
 
 
 .team-section{
-    margin-top: 107px;
     margin-bottom: 107px;
 }
 
@@ -289,14 +482,12 @@ nav ul li a.signup:hover {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .team-member {
     background-color: #fff;
-    overflow: hidden;
     text-align: left;
     max-width: 267px;
     max-height: 452px;
