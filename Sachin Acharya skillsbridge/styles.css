@@ -715,3 +715,15 @@ span{
   font-size: 20px;
   line-height: 73%;
 }
+
+.faq .container{
+  display: flex;
+  padding: 100px;
+  gap: 120px;
+  background-color: #fff;
+}
+
+.faq-head{
+  max-height: 293px;
+  width: 33%;
+}
