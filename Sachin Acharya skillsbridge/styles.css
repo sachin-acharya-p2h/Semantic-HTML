@@ -453,18 +453,24 @@
     font-weight: bold;
 }
 
+.courses-body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+  gap: 30px;
+  margin-bottom: 100px;
+}
+
 .course-box {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    max-width: 783.5px;
-    max-height: 807px;
     padding: 50px;
+    width: 100%;
 }
 
 .course-img img {
-    max-width: 683.5px;
+    max-width: 100%;
     height: auto;
     display: block;
     margin-left: auto;
@@ -535,4 +541,177 @@
 
 .course-buy a:hover {
     background-color: #003d80;
+}
+
+.test-head{
+  display: flex;
+  justify-content: space-between;
+}
+
+.test-text{
+  width: 80%;
+}
+
+.test-view{
+  padding-left: 20px;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+.test-body{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+  gap: 30px;
+  margin-bottom: 100px;
+}
+.test-card{
+  background-color: #fff;
+  margin-bottom: 20px;
+  width: 100%;
+} 
+
+.test-body-text{
+  padding: 50px;
+}
+
+.test-body-person{
+  display: flex;
+  padding: 0 50px 50px 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name-pic {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust spacing between image and text */
+}
+
+
+.name-pic p {
+  margin: 0;
+  font-size: 16px; /* Adjust text size */
+  color: #000; /* Adjust text color */
+  font-weight: 530;
+}
+
+.pricing{
+  /**/
+  margin-bottom: 100px;
+}
+
+.price-head {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.price-head-text {
+  max-width: 60%; /* Control the width of the text to prevent overlap */
+}
+
+.price-head-time {
+  position: absolute; /* Position relative to the price-head container */
+  bottom: 0; /* Align to the bottom */
+  right: 0; /* Align to the right */
+  background-color: #fff; /* Ensure background is white */
+  padding: 15px 20px; /* Add padding around the content */
+  border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
+}
+
+.price-head-time ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.price-head-time li {
+  margin: 0; /* Remove default margins */
+}
+
+.price-head-time li + li {
+  margin-left: 20px; /* Add margin to create space between list items */
+}
+
+.price-head-time a {
+  text-decoration: none;
+  font-size: 16px; /* Adjust font size */
+  padding: 10px 20px; /* Add padding to give button-like appearance */
+  border-radius: 5px; /* Rounded corners */
+  color: #333; /* Default text color */
+  background-color: transparent; /* Default background color */
+  border: 2px solid transparent; /* Default border color */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.price-head-time a.monthly {
+  background-color: #FF9500; /* Yellow background for Monthly */
+  color: #fff; /* White text */
+  border: 2px solid #FF9500; /* Yellow border to match the background */
+}
+
+.price-head-time a.monthly:hover {
+  background-color: #FF9500; /* Slightly darker yellow on hover */
+  border-color: #FF9500; /* Match border to hover background */
+  color: #fff; /* Keep white text */
+}
+
+.price-body{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+  width: 100%;
+  background-color: #fff;
+  gap: 30px;
+  text-align: center;
+}
+
+.left-right-price{
+  flex: 1;
+  background-color: #F1F1F3;
+  padding: 50px 30px 50px 30px;
+}
+
+.left-right-price .yellow-bg{
+  background-color: #FFEACC;
+}
+
+.features{
+  background-color: #fff;
+  padding-top: 20px;
+}
+
+.features ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.features li{
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin-bottom: 5px;
+  width: 80%;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: left;
+}
+
+.start{
+  padding: 20px 24px 20px 24px;
+  margin: 0;
+  background-color: #ff9500;
+}
+
+span{
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 73%;
 }

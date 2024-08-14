@@ -377,7 +377,6 @@ nav ul li a.signup{
     font-weight: 800;
     line-height: 58px;
     letter-spacing: -1.8px;
-    
 }
 
 .layout-column-2 p {
@@ -423,6 +422,7 @@ nav ul li a.signup{
     font-size: 48px;
     letter-spacing: -1.8px;
     line-height: 58px;
+    width: 85%;
 }
 
 .img-para {
@@ -430,6 +430,7 @@ nav ul li a.signup{
     padding-top: 50px;
     letter-spacing: -0.2px;
     line-height: 32px;
+    width: 90%;
 }
 
 
