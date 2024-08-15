@@ -347,8 +347,8 @@
 
 .whiskers {
   position: absolute;
-  top: 240px;
-  left: 400px;
+  top: 2.6%;
+  left: 24%;
 }
 
 .hero-section svg{
@@ -952,6 +952,11 @@ span{
 
 .foot-logo{
   margin-bottom: 40px;
+}
+
+.footer ul{
+  margin: 0;
+  padding: 0;
 }
 
 .contact li{
