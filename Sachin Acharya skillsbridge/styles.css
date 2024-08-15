@@ -913,6 +913,9 @@ span{
 .enroll{
   background-color: #F1F1F3;
   padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .questions{
@@ -970,6 +973,14 @@ span{
 
 .home-about-soc li{
   padding-bottom: 8px;
+}
+
+.social-media ul{
+  display: flex;
+}
+
+.social-media li{
+  margin-right: 5px;
 }
 
 .copyright{
