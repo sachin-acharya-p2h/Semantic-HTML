@@ -721,9 +721,81 @@ span{
   padding: 100px;
   gap: 120px;
   background-color: #fff;
+  margin-bottom: 100px;
 }
 
 .faq-head{
   max-height: 293px;
   width: 33%;
+}
+
+.faq-answered{
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.faq-answered h4{
+  border-bottom: 1px solid #ccc;;
+}
+
+.enroll{
+  background-color: #F1F1F3;
+  padding: 10px;
+}
+
+.questions p{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+}
+
+.footer{
+  background-color: #fff;
+  padding: 100px 162px 30px 162px;
+}
+
+.footer .container{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.contact{
+  flex: 1;
+  margin: 0;
+}
+
+.foot-logo{
+  margin-bottom: 40px;
+}
+
+.contact li{
+  margin-bottom: 20px;
+}
+
+.information{
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.foot-title{
+  font-size: 20px;
+  line-height: 150%;
+  color: #262626;
+  padding-bottom: 14px;
+}
+
+.home-about-soc li{
+  padding-bottom: 8px;
+}
+
+.copyright{
+  text-align: center;
 }
