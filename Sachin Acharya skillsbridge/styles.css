@@ -228,13 +228,22 @@
 
   .free-courses{
     background-color: #ff9500;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .free-courses p{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 14px 0;
+    font-size: 18px;
+    line-height: 150%;
+    color: #fff;
+  }
+
+  .free-courses p svg{
+    margin-left: 23px;
   }
 
 /* Basic styles for the navbar */
@@ -270,24 +279,16 @@
 }
 
 .first-phase-nav li {
-    margin-right: 30px; /* Increased margin for better spacing */
+    margin-right: 30px; 
+    padding: 10px;
+    margin-right: 26px;
 }
 
-.first-phase-nav li:first-child a {
-    font-weight: bold;
-    color: orange;
-    font-size: 18px; /* Adjusted font size for the logo */
-}
-
-.first-phase-nav li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-    transition: color 0.3s ease;
-}
-
-.first-phase-nav li a:hover {
-    color: orange;
+.first-phase-nav li:nth-child(2) a {
+  background-color: #F1F1F3; /* Light gray background */
+  padding: 10px 20px; /* Padding inside the link */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.01); /* Light grey box shadow */
 }
 
 /* Style for the second part of the nav (right side) */
@@ -331,15 +332,67 @@
 }
 
 
-.advertisement{
+/* .advertisement{
+} */
+
+.hero-section{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    max-width: fit-content;
-    height: 337px;
-    /* margin-bottom: 100px; */ /*didnt't feel good */
+    width: 60%;
+    margin-bottom: 100px;
+}
+
+.whiskers {
+  position: absolute;
+  top: 240px;
+  left: 400px;
+}
+
+.hero-section svg{
+  justify-content: left    ;
+}
+
+.unlock{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 14px 20px 14px 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.unlock img{
+  margin-right: 10px;
+}
+
+.unlock h1{
+  align-items: center;
+  padding-top: 5px;
+  font-size: 48px;
+}
+
+.unlock span{
+  font-size: 48px;
+  font-weight: bold;
+  color: #FF9500;
+}
+
+.unlock-under{
+  width: 90%;
+  text-align: center;
+  color: #262626;
+  margin-bottom: 60px;
+}
+
+.under-font{
+  font-size: 38px;
+  line-height: 150%;
+  font-weight: bold;
+  margin-bottom: 10px;
+  height: auto;
 }
 
 .unlock-buttons .ad{
@@ -350,25 +403,35 @@
 }
 
 .unlock-buttons .ad li{
-    margin-right: 20px;
+    margin-right: 12px;
 }
 
-.ad li a.sign-up {
-    background-color: orange;
-    color: white;
-    padding: 8px 16px;
+.ad li a.sign-price {
+    background-color: white;
+    color: black;
+    padding: 18px 24px;
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s ease;
 }
 
-.companies{
+.ad li a.sign-up {
+  background-color: orange;
+  color: white;
+  padding: 18px 24px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.companies .container{
     height: 154;
     margin-bottom: 100px;
     background-color: white;
-    width: 60%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+    padding: 30px;
 }
 
 .companies-list{
@@ -377,9 +440,17 @@
     justify-content: space-between;
 }
 
+.companies ul{
+  margin: 0;
+}
+
 .companies-list li{
-    padding: 20px;
     margin: 0;
+    border-right: 1px solid #F1F1F3;
+}
+
+.companies-list li img{
+  padding: 30px 40px;
 }
 
 .video{
@@ -390,9 +461,66 @@
 }
 
 .benefits{
-    display: flex;
-    flex-direction: column;
+  margin-bottom: 100px;
 }
+
+.benefits-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0px 30px 0px;
+  border-radius: 10px;
+}
+
+.benefits-heading ul {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.benefits-heading li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.benefits-heading h2 {
+  font-size: 36px;
+  margin: 0;
+  padding-right: 20px;
+}
+
+.benefits-heading p {
+  font-size: 16px;
+  margin: 0;
+  color: #4a4a4a;
+  line-height: 1.6;
+  max-width: 70%;
+}
+
+.benefits-heading-button {
+  display: inline-block;
+  padding: 18px 24px;
+  background-color: #fff;
+  color: #262626;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+  align-self: flex-end;
+}
+
+.benefits-heading-button:hover {
+  background-color: #f0f0f0;
+}
+
 
 .benefits-body{
     display: grid;
@@ -478,24 +606,27 @@
 }
 
 .course-prop {
-    padding: 15px 15px 0 15px;
+    padding-top: 15px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .course-prop ul {
     list-style: none;
     display: flex;
-    justify-content: start;
+    justify-content: flex-end;
     margin-right: 20px;
 }
 
 .course-prop li {
     font-size: 14px;
-    padding:  15px;
+    padding: 10px 16px;
     border: 1px solid grey;
-    margin: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
 }
+
 
 .course-author p {
     font-size: 20px;
@@ -568,6 +699,7 @@
   background-color: #fff;
   margin-bottom: 20px;
   width: 100%;
+  border-radius: 15px;
 } 
 
 .test-body-text{
@@ -576,9 +708,10 @@
 
 .test-body-person{
   display: flex;
-  padding: 0 50px 50px 50px;
+  padding: 30px 50px 30px 50px;
   align-items: center;
   justify-content: space-between;
+  background-color: #FCFCFD;
 }
 
 .name-pic {
@@ -593,6 +726,12 @@
   font-size: 16px; /* Adjust text size */
   color: #000; /* Adjust text color */
   font-weight: 530;
+}
+
+.read-full-story{
+  border-radius: 10px;
+  background-color: #F7F7F8;
+  padding: 18px 24px 24px 18px;
 }
 
 .pricing{
